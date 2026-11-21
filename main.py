@@ -20,8 +20,8 @@ pixel_parameters={
 
 }
 parameters={
-    "token":"mani353gujjar",
-    "username":"harisafsar03051",
+    "token":os.environ.get("TOKEN"),
+    "username":os.environ.get("USERNAME"),
     "agreeTermsOfService":"yes",
     "notMinor":"yes",
 }

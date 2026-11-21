@@ -1,13 +1,12 @@
-from os import scandir
 
+import os
 import requests
 import datetime
 
-from pandas.core.array_algos.quantile import quantile_with_mask
 
 #CONSTANTS
-USERNAME="harisafsar03051"
-TOKEN="mani353gujjar"
+USERNAME=os.environ.get("USERNAME")
+TOKEN=os.environ.get("TOKEN")
 GRAPH_ID="graph1"
 API_ENDPOINT="https://pixe.la/v1/users"
 GRAPH_ENDPOINT=f"{API_ENDPOINT}/{USERNAME}/graphs"
